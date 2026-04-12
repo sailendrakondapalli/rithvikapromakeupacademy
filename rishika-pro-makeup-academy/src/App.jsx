@@ -8,6 +8,7 @@ import Packages from './pages/Packages'
 import PackageDetail from './pages/PackageDetail'
 import ClassesPage from './pages/ClassesPage'
 import ClassDetail from './pages/ClassDetail'
+import Works from './pages/Works'
 import './App.css'
 
 function Loader() {
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/packages/:slug" element={<PackageDetail />} />
           <Route path="/classes" element={<ClassesPage />} />
           <Route path="/classes/:slug" element={<ClassDetail />} />
+          <Route path="/works" element={<Works />} />
         </Routes>
       </main>
       <Footer />

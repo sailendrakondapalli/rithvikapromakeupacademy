@@ -9,19 +9,19 @@ const grouped = [
   {
     category: 'Bridal',
     icon: '👰',
-    img: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80',
+    img: '/images/bridalmakeup.png',
     items: allPackages.filter(p => p.category === 'Bridal'),
   },
   {
     category: 'Party',
     icon: '✨',
-    img: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80',
+    img: '/images/partymakeover.png',
     items: allPackages.filter(p => p.category === 'Party'),
   },
   {
     category: 'Guest',
     icon: '💄',
-    img: 'https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=800&q=80',
+    img: '/images/guestmakeover.png',
     items: allPackages.filter(p => p.category === 'Guest'),
   },
 ]

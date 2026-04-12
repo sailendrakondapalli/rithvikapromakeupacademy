@@ -9,21 +9,21 @@ const services = [
     title: 'Bridal Makeover',
     price: '₹15,000 – ₹30,000',
     desc: 'Flawless bridal looks crafted to make your special day unforgettable. Includes trial session.',
-    img: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80',
+    img: '/images/bridalmakeup.png',
     icon: '👰',
   },
   {
     title: 'Party Makeover',
     price: '₹10,000 – ₹20,000',
     desc: 'Glamorous party-ready looks for every occasion — from cocktail nights to festive celebrations.',
-    img: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&q=80',
+    img: '/images/partymakeover.png',
     icon: '✨',
   },
   {
     title: 'Guest Makeover',
     price: '₹4,000 – ₹6,000',
     desc: 'Elegant and polished looks for wedding guests and special events.',
-    img: 'https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=600&q=80',
+    img: '/images/guestmakeover.png',
     icon: '💄',
   },
 ]
@@ -83,6 +83,32 @@ export default function Services() {
 
         <div className="services-cta reveal">
           <Link to="/packages" className="wa-btn outline-btn">View All Packages</Link>
+        </div>
+
+        <div className="services-highlights reveal">
+          <div className="highlight-item">
+            <span className="highlight-icon">🇮🇳</span>
+            <div>
+              <strong>Pan India Services</strong>
+              <p>Available across all major cities in India</p>
+            </div>
+          </div>
+          <div className="highlight-divider" />
+          <div className="highlight-item">
+            <span className="highlight-icon">🏠</span>
+            <div>
+              <strong>Home Service Available</strong>
+              <p>We come to you — doorstep makeup service</p>
+            </div>
+          </div>
+          <div className="highlight-divider" />
+          <div className="highlight-item">
+            <span className="highlight-icon">✈️</span>
+            <div>
+              <strong>Destination Weddings</strong>
+              <p>Travel bookings accepted across India</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
