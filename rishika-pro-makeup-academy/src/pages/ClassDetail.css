@@ -1,0 +1,2 @@
+/* Reuses PackageDetail styles — just add the star color */
+.star { color: var(--pink-dark); font-weight: 700; }

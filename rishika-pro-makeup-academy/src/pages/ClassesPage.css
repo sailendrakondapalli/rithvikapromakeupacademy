@@ -1,0 +1,188 @@
+.classes-page {
+  min-height: 100vh;
+}
+
+.classes-page-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.classes-page-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(232,120,154,0.7) 0%, rgba(44,26,26,0.85) 100%);
+}
+
+.classes-page-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.classes-page-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 2px;
+}
+
+.classes-page-content {
+  background: var(--nude);
+  padding: 5rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.course-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 4rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.course-row.reverse {
+  direction: rtl;
+}
+
+.course-row.reverse > * {
+  direction: ltr;
+}
+
+.course-img {
+  position: relative;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(44,26,26,0.35);
+}
+
+.course-big-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 4rem;
+}
+
+.course-info {
+  background: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.course-duration {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.course-info h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.course-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.course-topics {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.course-topics li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.check {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.course-btn {
+  align-self: flex-start;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 768px) {
+  .course-row,
+  .course-row.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .course-img {
+    min-height: 250px;
+  }
+
+  .course-info {
+    padding: 2rem 1.5rem;
+  }
+
+  .course-topics {
+    grid-template-columns: 1fr;
+  }
+}
+
+.course-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.course-detail-btn {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.course-detail-btn:hover {
+  background: var(--gold);
+  color: #fff;
+}
