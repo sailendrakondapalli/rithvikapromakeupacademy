@@ -22,11 +22,17 @@ export default function Classes() {
   }, [])
 
   return (
-    <section
-      className="classes-section"
-      style={{ backgroundImage: `url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80')` }}
-      ref={ref}
-    >
+    <section className="classes-section" ref={ref}>
+      <video
+        className="classes-video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80"
+      >
+        <source src="/videos/AcademyClasses.mp4" type="video/mp4" />
+      </video>
       <div className="classes-overlay" />
       <div className="classes-inner">
         <p className="section-subtitle reveal">Learn & Grow</p>
@@ -36,15 +42,6 @@ export default function Classes() {
           Transform your passion into a profession. Our structured programs are designed
           for beginners and professionals alike.
         </p>
-
-        <div className="classes-grid">
-          {items.map((item, i) => (
-            <div className="class-chip reveal" key={i} style={{ transitionDelay: `${i * 0.1}s` }}>
-              <span className="chip-icon">{item.icon}</span>
-              <span>{item.label}</span>
-            </div>
-          ))}
-        </div>
 
         <div className="classes-cta reveal">
           <Link to="/classes" className="wa-btn">Explore Classes</Link>

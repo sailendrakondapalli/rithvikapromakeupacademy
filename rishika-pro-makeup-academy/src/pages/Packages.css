@@ -15,9 +15,7 @@
 }
 
 .packages-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(44,26,26,0.8) 0%, rgba(201,168,76,0.2) 100%);
+  display: none;
 }
 
 .packages-hero-content {
@@ -58,9 +56,7 @@
 }
 
 .pkg-header-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(44,26,26,0.65);
+  display: none;
 }
 
 .pkg-header-content {
@@ -176,4 +172,12 @@
 .pkg-detail-btn:hover {
   background: var(--gold);
   color: #fff;
+}
+
+/* readability without overlay */
+.packages-hero-content .section-title,
+.packages-hero-content .section-subtitle,
+.packages-hero-sub,
+.pkg-header-content h2 {
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
 }

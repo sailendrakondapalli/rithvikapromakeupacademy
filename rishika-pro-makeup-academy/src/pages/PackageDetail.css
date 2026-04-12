@@ -17,9 +17,7 @@
 }
 
 .detail-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(44,26,26,0.92) 0%, rgba(44,26,26,0.4) 60%, transparent 100%);
+  display: none;
 }
 
 .detail-hero-content {
@@ -222,4 +220,13 @@
   .detail-card {
     position: static;
   }
+}
+
+/* readability without overlay */
+.detail-hero-content h1,
+.detail-hero-content p,
+.detail-category,
+.detail-tagline,
+.detail-price {
+  text-shadow: 0 2px 12px rgba(0,0,0,0.75);
 }

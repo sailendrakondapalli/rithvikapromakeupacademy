@@ -1,18 +1,23 @@
 .classes-section {
   position: relative;
   padding: 7rem 5%;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  overflow: hidden;
   min-height: 80vh;
   display: flex;
   align-items: center;
 }
 
-.classes-overlay {
+.classes-video {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(232,120,154,0.75) 0%, rgba(44,26,26,0.85) 100%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.classes-overlay {
+  display: none;
 }
 
 .classes-inner {
@@ -23,7 +28,6 @@
   text-align: center;
   width: 100%;
 }
-
 .classes-intro {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
@@ -68,4 +72,12 @@
 
 .classes-cta {
   margin-top: 1rem;
+}
+
+/* readability without overlay */
+.classes-inner .section-title,
+.classes-inner .section-subtitle,
+.classes-intro,
+.class-chip {
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
 }

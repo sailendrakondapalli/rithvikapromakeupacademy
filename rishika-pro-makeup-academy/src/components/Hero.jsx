@@ -4,13 +4,17 @@ const WA_BOOK = 'https://wa.me/917075928104?text=Hi%20I%20want%20to%20book%20a%2
 
 export default function Hero() {
   return (
-    <section
-      className="hero"
-      style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1600&q=80')`
-      }}
-    >
-      <div className="hero-overlay" />
+    <section className="hero">
+      <video
+        className="hero-video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1600&q=80"
+      >
+        <source src="/videos/herosectionhomepage.mp4" type="video/mp4" />
+      </video>
       <div className="hero-content">
         <p className="hero-tagline">Welcome to</p>
         <h1 className="hero-title">Rishika Pro<br />Makeup Academy</h1>

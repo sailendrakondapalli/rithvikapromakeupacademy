@@ -41,11 +41,18 @@ export default function Services() {
   }, [])
 
   return (
-    <section
-      className="services"
-      style={{ backgroundImage: `url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1600&q=80')` }}
-      ref={ref}
-    >
+    <section className="services" ref={ref}>
+      <video
+        className="services-video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1600&q=80"
+      >
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-makeup-artist-applying-foundation-to-a-model-42704-large.mp4" type="video/mp4" />
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-close-up-of-a-makeup-brush-on-a-palette-42705-large.mp4" type="video/mp4" />
+      </video>
       <div className="services-overlay" />
       <div className="services-inner">
         <p className="section-subtitle reveal">Our Services</p>

@@ -14,39 +14,54 @@ export default function About() {
   }, [])
 
   return (
-    <section
-      id="about"
-      className="about"
-      style={{ backgroundImage: `url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1600&q=80')` }}
-      ref={ref}
-    >
-      <div className="about-overlay" />
-      <div className="about-content">
-        <div className="about-card reveal">
-          <p className="section-subtitle">Meet the Artist</p>
-          <h2 className="section-title" style={{ color: 'var(--dark)' }}>Sailaja</h2>
-          <div className="section-divider" />
-          <div className="about-badge">3+ Years Experience</div>
-          <p className="about-desc">
-            Sailaja is a passionate makeup artist and educator with over 3 years of experience
-            in transforming looks and building careers. She specializes in bridal, party, and
-            professional makeup, while also mentoring aspiring artists through structured
-            academy programs.
-          </p>
-          <div className="about-stats">
-            <div className="stat">
-              <span className="stat-num">500+</span>
-              <span className="stat-label">Happy Clients</span>
-            </div>
-            <div className="stat">
-              <span className="stat-num">3+</span>
-              <span className="stat-label">Years Experience</span>
-            </div>
-            <div className="stat">
-              <span className="stat-num">100+</span>
-              <span className="stat-label">Students Trained</span>
-            </div>
+    <section id="about" className="about" ref={ref}>
+      <div className="about-left reveal">
+        <div className="about-img-wrap">
+          {/* Replace src with Sailaja's actual photo later */}
+          <img
+            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80"
+            alt="Sailaja - Makeup Artist"
+            className="about-img"
+          />
+          <div className="about-img-badge">
+            <span className="badge-num">3+</span>
+            <span className="badge-label">Years Experience</span>
           </div>
+        </div>
+      </div>
+
+      <div className="about-right reveal">
+        <p className="section-subtitle" style={{ color: 'var(--gold)', textAlign: 'left' }}>Meet the Artist</p>
+        <h2 className="about-name">Sailaja</h2>
+        <div className="about-divider" />
+        <p className="about-desc">
+          Sailaja is a passionate makeup artist and educator with over 3 years of experience
+          in transforming looks and building careers. She specializes in bridal, party, and
+          professional makeup, while also mentoring aspiring artists through structured
+          academy programs.
+        </p>
+
+        <div className="about-stats">
+          <div className="stat">
+            <span className="stat-num">500+</span>
+            <span className="stat-label">Happy Clients</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num">3+</span>
+            <span className="stat-label">Years Experience</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num">100+</span>
+            <span className="stat-label">Students Trained</span>
+          </div>
+        </div>
+
+        <div className="about-tags">
+          <span>Bridal Makeup</span>
+          <span>Party Looks</span>
+          <span>Airbrush</span>
+          <span>Hair Styling</span>
+          <span>Saree Draping</span>
         </div>
       </div>
     </section>

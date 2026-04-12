@@ -15,9 +15,7 @@
 }
 
 .classes-page-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(232,120,154,0.7) 0%, rgba(44,26,26,0.85) 100%);
+  display: none;
 }
 
 .classes-page-hero-content {
@@ -69,9 +67,7 @@
 }
 
 .course-img-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(44,26,26,0.35);
+  display: none;
 }
 
 .course-big-icon {
@@ -185,4 +181,11 @@
 .course-detail-btn:hover {
   background: var(--gold);
   color: #fff;
+}
+
+/* readability without overlay */
+.classes-page-hero-content .section-title,
+.classes-page-hero-content .section-subtitle,
+.classes-page-sub {
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
 }

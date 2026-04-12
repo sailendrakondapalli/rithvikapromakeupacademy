@@ -7,9 +7,7 @@
 }
 
 .contact-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(245,230,211,0.93) 0%, rgba(232,213,192,0.9) 100%);
+  display: none;
 }
 
 .contact-inner {

@@ -1,49 +1,86 @@
 .about {
-  position: relative;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
   align-items: center;
+  padding: 7rem 8%;
+  background: linear-gradient(135deg, var(--nude) 0%, #fff 60%, var(--nude-dark) 100%);
+}
+
+/* ── Left: image ── */
+.about-left {
+  display: flex;
   justify-content: center;
-  padding: 6rem 5%;
 }
 
-.about-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(245,230,211,0.92) 0%, rgba(232,213,192,0.88) 100%);
-}
-
-.about-content {
+.about-img-wrap {
   position: relative;
-  z-index: 2;
-  max-width: 700px;
   width: 100%;
+  max-width: 420px;
 }
 
-.about-card {
-  background: rgba(255,255,255,0.7);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(201,168,76,0.2);
+.about-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
   border-radius: 20px;
-  padding: 3rem;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  display: block;
 }
 
-.about-badge {
-  display: inline-block;
+.about-img-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
   background: linear-gradient(135deg, var(--gold), var(--gold-light));
   color: #fff;
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(201,168,76,0.4);
+  min-width: 110px;
+}
+
+.badge-num {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.badge-label {
+  display: block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 6px 18px;
-  border-radius: 20px;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+/* ── Right: text ── */
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.about-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1;
+  margin: 0.4rem 0 0.8rem;
+}
+
+.about-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--pink));
+  border-radius: 2px;
   margin-bottom: 1.5rem;
 }
 
@@ -57,21 +94,20 @@
 
 .about-stats {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 
 .stat {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 4px;
 }
 
 .stat-num {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--gold);
   line-height: 1;
@@ -85,6 +121,47 @@
   color: var(--text);
 }
 
-@media (max-width: 600px) {
-  .about-card { padding: 2rem 1.5rem; }
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.about-tags span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gold);
+  border: 1.5px solid var(--gold);
+  border-radius: 20px;
+  padding: 5px 14px;
+  letter-spacing: 0.5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.about-tags span:hover {
+  background: var(--gold);
+  color: #fff;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 5rem 5%;
+  }
+
+  .about-img {
+    height: 380px;
+  }
+
+  .about-img-badge {
+    bottom: -15px;
+    right: -10px;
+  }
+
+  .about-name {
+    font-size: 2.5rem;
+  }
 }

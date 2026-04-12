@@ -1,15 +1,20 @@
 .services {
   position: relative;
   padding: 7rem 5%;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.services-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .services-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(44,26,26,0.88) 0%, rgba(44,26,26,0.75) 100%);
+  display: none;
 }
 
 .services-inner {
@@ -51,9 +56,7 @@
 }
 
 .service-card-img-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(44,26,26,0.4);
+  display: none;
 }
 
 .service-icon {
@@ -110,4 +113,13 @@
 .outline-btn:hover {
   background: var(--gold) !important;
   color: #fff !important;
+}
+
+/* readability without overlay */
+.services-inner .section-title,
+.services-inner .section-subtitle,
+.service-card-body h3,
+.service-price,
+.service-desc {
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
 }
