@@ -5,6 +5,7 @@
   min-height: 80vh;
   display: flex;
   align-items: center;
+  background: #1a0a0a;
 }
 
 .classes-video {

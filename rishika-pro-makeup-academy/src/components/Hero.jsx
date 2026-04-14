@@ -11,7 +11,6 @@ export default function Hero() {
         muted
         loop
         playsInline
-        poster="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1600&q=80"
       >
         <source src="/videos/herosectionhomepage.mp4" type="video/mp4" />
       </video>

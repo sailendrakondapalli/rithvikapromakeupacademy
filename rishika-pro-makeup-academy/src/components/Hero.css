@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #1a0a0a;
 }
 
 .hero-video {
