@@ -66,7 +66,11 @@ export default function Navbar() {
 
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <li className="nav-close-row">
-          <button className="nav-close-btn" onClick={() => setMenuOpen(false)} aria-label="Close menu">✕</button>
+          <button
+            className="nav-close-btn"
+            onClick={(e) => { e.stopPropagation(); setMenuOpen(false) }}
+            aria-label="Close menu"
+          >✕</button>
         </li>
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><a href="/#about" onClick={handleAboutClick}>About</a></li>
