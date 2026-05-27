@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="footer-info">
           <h4>Contact Us</h4>
           <p>📞 <a href="tel:7075928104">7075928104</a></p>
-          <p>📍 Gandhamguda Bandlaguda Jagir,<br />Gandipet Mandal, R.R. Dist - 500091,<br />Hyderabad, Telangana</p>
+          <p>📍 5-6-87/1, Lane 5, Kistareddy Colony,<br />Gandhamguda, Gandipet Mandal,<br />Hyderabad, Telangana - 500091</p>
         </div>
 
         <div className="footer-links">
@@ -53,7 +53,7 @@ export default function Footer() {
       <div className="footer-map">
         <iframe
           title="Rishika Pro Makeup Academy Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.3500!3d17.3500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIxJzAwLjAiTiA3OMKwMjEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+          src="https://maps.google.com/maps?q=5-6-87%2F1%2C+lane+5%2C+Kistareddy+Colony%2C+Gandhamguda%2C+Gandipet%2C+Hyderabad%2C+Telangana+500091&output=embed"
           width="100%"
           height="250"
           style={{ border: 0 }}
