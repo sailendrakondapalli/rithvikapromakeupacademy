@@ -37,7 +37,7 @@ export default function WorksGallery() {
         <p className="section-subtitle" style={{ color: 'var(--gold)' }}>Portfolio</p>
         <h2 className="works-title">Her Works</h2>
         <div className="section-divider" />
-        <p className="works-sub">A glimpse of Sailaja's transformations</p>
+        <p className="works-sub">A glimpse of Shailaja's transformations</p>
       </div>
 
       <div

@@ -17,10 +17,10 @@ export default function About() {
     <section id="about" className="about" ref={ref}>
       <div className="about-left reveal">
         <div className="about-img-wrap">
-          {/* Replace src with Sailaja's actual photo later */}
+          {/* Replace src with Shailaja's actual photo later */}
           <img
             src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80"
-            alt="Sailaja - Makeup Artist"
+            alt="Shailaja - Makeup Artist"
             className="about-img"
           />
           <div className="about-img-badge">
@@ -32,10 +32,10 @@ export default function About() {
 
       <div className="about-right reveal">
         <p className="section-subtitle" style={{ color: 'var(--gold)', textAlign: 'left' }}>Meet the Artist</p>
-        <h2 className="about-name">Sailaja</h2>
+        <h2 className="about-name">Shailaja</h2>
         <div className="about-divider" />
         <p className="about-desc">
-          Sailaja is a certified bridal makeup artist and educator with over 3 years of experience
+          Shailaja is a certified bridal makeup artist and educator with over 3 years of experience
           in transforming looks and building careers. She specializes in bridal, party, and
           professional makeup, while also mentoring aspiring artists through structured
           academy programs.

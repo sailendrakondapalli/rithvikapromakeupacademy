@@ -29,7 +29,7 @@ export default function Works() {
         <div className="works-page-overlay" />
         <div className="works-page-hero-content">
           <p className="section-subtitle">Portfolio</p>
-          <h1 className="section-title" style={{ fontSize: 'clamp(2.5rem,6vw,4.5rem)' }}>Sailaja's Works</h1>
+          <h1 className="section-title" style={{ fontSize: 'clamp(2.5rem,6vw,4.5rem)' }}>Shailaja's Works</h1>
           <div className="section-divider" />
           <p className="works-page-sub">Every look tells a story</p>
         </div>
