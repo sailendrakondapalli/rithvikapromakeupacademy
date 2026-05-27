@@ -9,7 +9,7 @@ export default function Footer() {
           <p>Enhancing Beauty, Empowering Careers</p>
           <div className="footer-socials">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/rishikapromakeupacademy"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
