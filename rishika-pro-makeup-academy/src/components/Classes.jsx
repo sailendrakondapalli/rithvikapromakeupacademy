@@ -29,7 +29,6 @@ export default function Classes() {
         muted
         loop
         playsInline
-        poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80"
       >
         <source src="/videos/AcademyClasses.mp4" type="video/mp4" />
       </video>
