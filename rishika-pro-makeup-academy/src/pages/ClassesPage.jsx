@@ -44,7 +44,6 @@ export default function ClassesPage() {
               style={{ backgroundImage: `url('${course.img}')` }}
             >
               <div className="course-img-overlay" />
-              <span className="course-big-icon">{course.icon}</span>
             </div>
             <div className="course-info">
               <span className="course-duration">⏱ {course.duration} &nbsp;|&nbsp; {course.fee}</span>

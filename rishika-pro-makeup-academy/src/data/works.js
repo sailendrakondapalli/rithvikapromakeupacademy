@@ -24,7 +24,7 @@ export const works = [
     tag: 'Guest',
   },
   {
-    src: '/works/WhatsApp Image 2026-04-11 at 8.36.04 PM (1).jpeg',
+    src: '/works/WhatsApp Image 2026-04-11 at 8.36.08 PM (2).jpeg',
     title: 'Traditional Bridal',
     desc: 'Classic South Indian bridal makeup with bold eyes, traditional bindi, and a vibrant lip color complementing the bridal saree.',
     tag: 'Bridal',
@@ -40,12 +40,6 @@ export const works = [
     title: 'Cocktail Night Look',
     desc: 'Dramatic cut-crease eye makeup with highlighted cheekbones and a glossy nude lip for a cocktail evening.',
     tag: 'Party',
-  },
-  {
-    src: '/works/WhatsApp Image 2026-04-11 at 8.36.07 PM.jpeg',
-    title: 'Soft Bridal Makeup',
-    desc: 'Soft and natural bridal look with peachy tones, subtle shimmer, and a fresh dewy finish.',
-    tag: 'Bridal',
   },
   {
     src: '/works/WhatsApp Image 2026-04-11 at 8.36.07 PM (1).jpeg',

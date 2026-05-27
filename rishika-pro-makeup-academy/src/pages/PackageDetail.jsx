@@ -28,7 +28,6 @@ export default function PackageDetail() {
       >
         <div className="detail-hero-overlay" />
         <div className="detail-hero-content">
-          <span className="detail-icon">{pkg.icon}</span>
           <p className="detail-category">{pkg.category} Package</p>
           <h1>{pkg.name}</h1>
           <p className="detail-tagline">{pkg.tagline}</p>

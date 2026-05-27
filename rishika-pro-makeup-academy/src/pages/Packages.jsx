@@ -63,7 +63,6 @@ export default function Packages() {
             >
               <div className="pkg-header-overlay" />
               <div className="pkg-header-content">
-                <span className="pkg-icon">{pkg.icon}</span>
                 <h2>{pkg.category} Packages</h2>
               </div>
             </div>

@@ -67,7 +67,6 @@ export default function Services() {
                 style={{ backgroundImage: `url('${s.img}')` }}
               >
                 <div className="service-card-img-overlay" />
-                <span className="service-icon">{s.icon}</span>
               </div>
               <div className="service-card-body">
                 <h3>{s.title}</h3>

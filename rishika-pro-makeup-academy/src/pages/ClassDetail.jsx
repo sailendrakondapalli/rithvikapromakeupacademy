@@ -28,7 +28,6 @@ export default function ClassDetail() {
       >
         <div className="detail-hero-overlay" />
         <div className="detail-hero-content">
-          <span className="detail-icon">{course.icon}</span>
           <p className="detail-category">Academy Course</p>
           <h1>{course.title}</h1>
           <p className="detail-tagline">{course.tagline}</p>
