@@ -17,9 +17,8 @@ export default function About() {
     <section id="about" className="about" ref={ref}>
       <div className="about-left reveal">
         <div className="about-img-wrap">
-          {/* Replace src with Shailaja's actual photo later */}
           <img
-            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80"
+            src="/images/image.png"
             alt="Shailaja - Makeup Artist"
             className="about-img"
           />
@@ -43,16 +42,8 @@ export default function About() {
 
         <div className="about-stats">
           <div className="stat">
-            <span className="stat-num">500+</span>
-            <span className="stat-label">Happy Clients</span>
-          </div>
-          <div className="stat">
             <span className="stat-num">3+</span>
             <span className="stat-label">Years Experience</span>
-          </div>
-          <div className="stat">
-            <span className="stat-num">100+</span>
-            <span className="stat-label">Students Trained</span>
           </div>
         </div>
 
